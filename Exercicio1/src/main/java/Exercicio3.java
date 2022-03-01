@@ -11,7 +11,7 @@ public class Exercicio3 {
         System.out.println("");
 
         NPA = (NP1+NP2)/2;
-        if(NPA<=60){
+        if(NPA<60){
             System.out.print("Entre com a nota na NP3: ");
             float NP3 = valorTeclado.nextFloat();
             if((NPA+NP3)<50){
