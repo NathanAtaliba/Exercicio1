@@ -3,15 +3,15 @@ public class Principal {
     public static void main(String[] args) {
 Scanner entradaTeclado = new Scanner(System.in);
 //////////////////////////////////////////////////////////////////
-        Curso[] curso = new Curso[1];  // alocando uma memoria com 3 vetores para curso
+        Curso[] curso = new Curso[1];  // alocando uma memoria com 1 vetores para curso
         Curso cur0 = new Curso();   // criando novos cursos para serem usados de referencia
         curso[0] = cur0;          // apontando o array pro curso 0;
 //////////////////////////////////////////////////////////////////
-        Disciplina[] disciplina = new Disciplina[1];  //alocando uma memoria com 3 vetores para disciplina
+        Disciplina[] disciplina = new Disciplina[1];  //alocando uma memoria com 1 vetores para disciplina
         Disciplina dis0 = new Disciplina(); // criando novas disciplinas para serem usados de referencia
         disciplina[0] = dis0;          // apontando o array pra disciplina 0;
 ///////////////////////////////////////////////////////////////////
-        Aluno[] alunos = new Aluno[1]; //alocando uma memoria com 3 vetores para alunos
+        Aluno[] alunos = new Aluno[1]; //alocando uma memoria com 1 vetores para alunos
         Aluno alunO = new Aluno(); // criando novos alunos para serem usados de referencia
         alunos[0] = alunO;          // apontando o array pro aluno 0;
 //////////////////////////////////////////////////////////////////
