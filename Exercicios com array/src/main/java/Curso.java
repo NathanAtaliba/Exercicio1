@@ -1,8 +1,14 @@
 public class Curso {
-    String nome="Nathan";
-    String tipo="qualquer";
-    String turno="dois";
+    String nome;
+    String tipo;
+    String turno;
 
+
+ public Curso(String nome,String tipo ,String turno){
+ this.nome = nome;
+ this.tipo = tipo;
+ this.turno = turno;
+ }
 
     void mostraInfo(){
         System.out.println("O nome do curso é: " + nome);
