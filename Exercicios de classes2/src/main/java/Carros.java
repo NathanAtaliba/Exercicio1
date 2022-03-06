@@ -5,7 +5,7 @@ public class Carros {
     double velocidadeMax;
     double velocidadeAtual;
 
-Motor motor = new Motor();
+Motor motor;
     void mostraInfo(){
         System.out.println("Marca do carro: " + marca);
         System.out.println("modelo do carro: " + modelo);
@@ -14,7 +14,9 @@ Motor motor = new Motor();
         System.out.println("potencia do motor: "+ motor.potencia +" CV");
         System.out.println("tipo do motor: "+ motor.tipo);
     }
-
+void addMotor(Motor motor){
+       this.motor = motor;
+}
     void acelerar(){
         Carros carros;
         System.out.println("O carro da " + marca + " esta acelerando!");
