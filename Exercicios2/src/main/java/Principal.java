@@ -15,10 +15,19 @@ nAzulejos = (retangulop/retanguloa);
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
 double alturaParede,larguraParede,alturaAzulejo,larguraAzulejo;
+        System.out.println("Entre com a altura da parede: ");
         alturaParede = input.nextDouble();
+        input.nextLine();
+        System.out.println("Entre com a largura da parede: ");
         larguraParede = input.nextDouble();
+        input.nextLine();
+        System.out.println("Entre com a altura do azulejo: ");
         alturaAzulejo = input.nextDouble();
+        input.nextLine();
+        System.out.println("Entre com a largura do azulejo: ");
         larguraAzulejo = input.nextDouble();
+        input.nextLine();
+
         calculaArea(alturaParede,larguraParede,alturaAzulejo,larguraAzulejo);
     }
 }
