@@ -7,22 +7,14 @@ public class Time {
     void mostraInfo(){
         System.out.println("nome do time: " + nome);
         System.out.println("cor da camisa: " +corCamisa);
-        for (int i = 0; i < jogadores.length ; i++) {
-            jogadores[i].mostraInfo();
-            System.out.println("---------------------");
-        }
-        System.out.println("-------------------------");
     }
 
     void adicionaJogador(){
-        Jogador jogador = new Jogador();
-
+        jogadores = new Jogador[0];
     }
 
     double calculaTotalSalario(){
-        for(int i=0;i<3;i++ ) {
 
-        }
         return 0;
     }
 
