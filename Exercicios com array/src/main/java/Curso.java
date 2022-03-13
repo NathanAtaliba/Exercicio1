@@ -2,7 +2,7 @@ public class Curso {
     String nome;
     String tipo;
     String turno;
-
+Disciplina disciplina;
 
  public Curso(String nome,String tipo ,String turno){
  this.nome = nome;

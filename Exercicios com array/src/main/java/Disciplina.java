@@ -8,7 +8,6 @@ Aluno[] alunos;
         this.nome = nome;
         this.sigla = sigla;
     }
-
     void mostraInfo() {
         System.out.println("Nome do professor da disciplina: " + nome);
         System.out.println("Nome da disciplina: " + professor);
