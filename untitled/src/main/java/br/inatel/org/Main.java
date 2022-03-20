@@ -1,20 +1,17 @@
 package br.inatel.org;
-import br.inatel.org.Jogador.Nave;
 import br.inatel.org.inimigo.Asteroide;
-
-
+import br.inatel.org.Jogador.Nave;
 public class Main{
     public static void main(String[] args) {
-        Asteroide asteroide1 = new Asteroide("Asteroide 1", "pequeno");
-        Asteroide asteroide2 = new Asteroide("Asteroide 2", "Grande");
+    Asteroide asteoide1 = new Asteroide("Asteroide1","pequeno");
+    Asteroide asteoide2 = new Asteroide("Asteroide2","grande");
+    Nave nave1 = new Nave("nave1",200.0,"normal");
+    Nave nave2 = new Nave("nave2",150.0,"Explosivo");
+nave1.atirar(asteoide1);
+nave1.atirar(asteoide2);
+nave2.atirar(asteoide1);
+nave2.atirar(asteoide2);
 
-        Nave nave1 = new Nave("nave1", 120.0, "Normal");
-        Nave nave2 = new Nave("nave2", 250.0, "Explosivo");
 
-nave1.Atirar(asteroide1);
-    nave1.Atirar(asteroide2);
-    nave2.Atirar(asteroide1);
-        nave2.Atirar(asteroide2);
-
-    }}
-
+    }
+}
