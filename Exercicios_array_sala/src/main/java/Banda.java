@@ -46,7 +46,5 @@ break;
         this.nome = nome;
         this.genero = genero;
     }
-
-
-    }
+}
 
