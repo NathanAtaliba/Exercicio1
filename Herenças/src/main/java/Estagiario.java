@@ -1,9 +1,10 @@
-public class Estagiario extends Funcionario {
-
-    Estagiario(String nome,int horasTrabalhadas,int valorHora,String funcao){
-        super(nome,horasTrabalhadas,valorHora,funcao);
-       super.calculaSalario();
-       super.apresentar();
+public class Estagiario extends Funcionario implements Sofre{
+    public Estagiario(String nome,int horasTrabalhadas,String funcao,int valorHora,int idade){
+        super(nome, horasTrabalhadas, funcao, valorHora, idade);
+    super.apresentar();
+    super.calculaSalario();
     }
+    public void sofrer(){
 
+    }
 }
