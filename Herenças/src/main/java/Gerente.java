@@ -27,6 +27,6 @@ public class Gerente extends Funcionario implements ContrataFuncionario, Sofre {
 
     }
     public void sofrer(){
-        
+
     }
 }
