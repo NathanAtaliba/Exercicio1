@@ -1,10 +1,9 @@
 public class Main {
     public static void main(String[] args) {
-        Brownie browNutella = new BrownieNutella("qualquer",100,"Nutella");
-        Brownie browCafe = new BrownieCafe("qual",300,"Cafe");
-        Brownie browDoceDeLeite = new BrownieDoceDeLeite("qualq",200,"Nutella");
-    browCafe.comprador.efetuarCompra(browCafe);
-        browNutella.comprador.efetuarCompra( browNutella);
-        browDoceDeLeite.comprador.efetuarCompra(browDoceDeLeite);
+
+        Comprador comprador = new Comprador();
+   comprador.efetuarCompra(new BrownieNutella("Brownie de nutella",100,"Nutella"));
+   comprador.efetuarCompra(new BrownieCafe("Brownie de cafe",300,"Cafe"));
+        comprador.efetuarCompra(new BrownieDoceDeLeite("Brownie de dode de leite",200,"Doce de leite"));
     }
 }

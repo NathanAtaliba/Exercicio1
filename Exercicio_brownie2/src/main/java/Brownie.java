@@ -9,6 +9,10 @@ public class Brownie {
        this.sabor = sabor;
    }
 
+    public String getSabor() {
+        return sabor;
+    }
+
     public void addCarrinhoDeCompras(){
 
     }
