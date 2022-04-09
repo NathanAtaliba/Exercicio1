@@ -12,15 +12,10 @@ public class Banda {
     }
 
     public void mostraInfo(){
-
-        for(int i=0;i<membros.length;i++){
-            if(membros!=null){
-                System.out.println(membros);
-            }
-        }
-        for(int i=0;i< musicas.length;i++){
-            if(musicas!=null){
-                System.out.println(musicas[i]);
+        for(Musica musicass: musicas){
+            if(musicass!=null){
+                System.out.println(musicas);
+                break;
             }
         }
     }
