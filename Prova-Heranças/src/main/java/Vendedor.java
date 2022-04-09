@@ -13,7 +13,7 @@ private double totalComissao;
     public double getTotalComissao() {
         return totalComissao;
     }
-
+    @Override
     public void fechaVenda(double valorVenda){
      valorVenda = valorVenda *0.2;
      totalComissao += valorVenda;

@@ -8,7 +8,7 @@ public class Contador extends Funcionario implements Despesa{
     public void recebeSalario() {
         System.out.println("Valor recebido: "+salario);
     }
-
+@Override
 public void cadastrarDespesa(String despesa){
     System.out.println("Foi cadastrado uma nova empresa");
 

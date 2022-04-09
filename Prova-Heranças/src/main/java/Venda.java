@@ -1,3 +1,3 @@
 public interface Venda {
-public void fechaVenda(double valorVenda);
+ void fechaVenda(double valorVenda);
 }
