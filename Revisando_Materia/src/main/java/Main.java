@@ -1,4 +1,5 @@
 public class Main {
+
     public static void main(String[] args) {
 
         /*
@@ -38,6 +39,7 @@ EXEMPLO DE FOR EACH(PERCORRENDO ARRAYS):
            chefe.atacar();
        }
          */
+
         }
     }
 

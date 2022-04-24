@@ -4,7 +4,8 @@ public class Boss extends Inimigo{
 
     }
 
-public void atacar(){
-
+ @Override
+ public void atacar(){
+    System.out.println("BOSS atacando");
 }
 }

@@ -35,7 +35,9 @@ public void setnumInimigos(int numInimigos){
         System.out.println("");
 
     }
-
+public void atacar(){
+    System.out.println("Inimigo atacando");
+}
 private void defender(){
 
 }
