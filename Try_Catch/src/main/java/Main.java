@@ -41,11 +41,4 @@ switch (calc.getOp())
     default:
         System.out.println("Operacao nao existe!");
 }
-        try
-        {
-            calc.dividir();
-        }
-        catch(ArithmeticException erro){
-            System.out.println("Divisao por zero nao existe, erro chamado : "+erro);
-        }
     }}
