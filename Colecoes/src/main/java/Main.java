@@ -17,15 +17,28 @@ public class Main {
         produtos.add(p4);
         produtos.add(p5);
 
-        Collections.reverseOrder();
+       Collections.sort(produtos);
         for(Produto produto : produtos){
+            int auxMaior;
+            int auxMenor;
             System.out.println(produto.getNome());
             System.out.println(produto.getPreco());
             System.out.println("");
-        }
+ auxMaior = produto.getPreco();
+ auxMenor = produto.getPreco();
+ if(auxMaior > produto.getPreco()){
+     auxMaior = produto.getPreco();
+ }else {
+     auxMaior = auxMaior;
+     }
+ if(auxMenor> produto.getPreco()){
+     auxMenor = auxMenor;
+ }else {
+     auxMenor = produto.getPreco();
+ }
+ }
+        System.out.println("Produto de maior valor:");
+        System.out.println("Produto de maior valor:");
+    }}
 
-
-
-    }
-    }
 
