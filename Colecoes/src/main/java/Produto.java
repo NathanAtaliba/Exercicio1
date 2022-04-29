@@ -32,8 +32,11 @@ public Produto(String nome, int preco){
 @Override
     public int compareTo(Produto p){
 
-        return Integer.compare(this.preco,p.preco);
-
+        return (Integer.compare(this.preco,p.preco));
 }
+//  @Override
+//   public int compareTo (Produto p){
+// return nome.compareTo(p.nome);
+// }
 
 }

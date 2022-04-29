@@ -16,9 +16,10 @@ public class Main {
         produtos.add(p3);
         produtos.add(p4);
         produtos.add(p5);
-
+//Para ordenar em ordem alfabetica, apenas utilizar Collections.sort(produtos);
        Collections.sort(produtos);
-        Collections.reverse(produtos);
+       Collections.sort(produtos);
+
         for(Produto produto : produtos){
             System.out.println(produto.getNome());
             System.out.println(produto.getPreco());
