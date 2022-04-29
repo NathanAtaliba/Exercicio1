@@ -1,6 +1,7 @@
 public class Produto implements Comparable<Produto> {
     private String nome;
 private int preco;
+//Integer preco2 =
 public Produto(String nome, int preco){
     this.preco = preco;
     this.nome = nome;
@@ -30,7 +31,8 @@ public Produto(String nome, int preco){
 }
 @Override
     public int compareTo(Produto p){
-return nome.compareTo(p.nome);
+
+        return Integer.compare(this.preco,p.preco);
 
 }
 
