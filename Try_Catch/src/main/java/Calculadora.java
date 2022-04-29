@@ -21,13 +21,10 @@ public class Calculadora {
 
     public void dividir(){
         try{
-            System.out.println(numero1/0);
-        }catch (ArithmeticException erro){
-            System.out.println("Erro chamado: "+ erro);
-
+            System.out.println(numero1/numero2);
+        }catch (ArithmeticException erro) {
+            System.out.println("Erro chamado: " + erro);
         }
-
-        System.out.println(numero1/numero2);
     }
     public void subtracao(){
         System.out.println((numero1-numero2));
