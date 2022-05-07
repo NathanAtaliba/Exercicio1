@@ -28,6 +28,7 @@ public Inimigo(String nome, double dano) {
     public int compareTo(Inimigo inimigo){
     int dan = (int)getDano();
     int dan1 =(int)inimigo.dano;
+
     return Integer.compare(dan,dan1);
 }
 }
