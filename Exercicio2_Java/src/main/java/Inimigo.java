@@ -24,7 +24,6 @@ public Inimigo(String nome, double dano) {
         this.dano = dano;
     }
 
-    @Override
     public int compareTo(Inimigo inimigo){
     int dan = (int)getDano();
     int dan1 =(int)inimigo.dano;
