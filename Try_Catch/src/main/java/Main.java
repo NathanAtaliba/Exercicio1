@@ -32,5 +32,6 @@ switch (calc.getOp())
 
     default:
         System.out.println("Operacao nao existe!");
+
 }
     }}
