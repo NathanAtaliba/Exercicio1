@@ -53,7 +53,7 @@ if(nota>=60) {
 });
     } catch(IOException e) {e.printStackTrace();}
     finally {
-        System.out.println("cheguei");
+        System.out.println("Tudo executado");
     }
 }
 }
