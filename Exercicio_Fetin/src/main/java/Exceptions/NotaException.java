@@ -6,3 +6,4 @@ public class NotaException extends RuntimeException{
         super(message);
     }
 }
+//UncheckedException

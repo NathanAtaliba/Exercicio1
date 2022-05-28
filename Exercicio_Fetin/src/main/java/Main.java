@@ -1,14 +1,16 @@
 public class Main {
     public static void main(String[] args) {
-FETIN fetin = new FETIN();
-Projetos projeto1 = new Projetos("P1",10);
-Projetos projeto2 = new Projetos("P1",77);
-Projetos projeto3 = new Projetos("P3",80);
-fetin.addProjeto(projeto1);
-fetin.addProjeto(projeto2);
-fetin.addProjeto(projeto3);
-        fetin.AvaliarProjetos();
+        FETIN fetin = new FETIN();  //CRIANDO UMA FETIN
+        Projetos p1 = new Projetos("nathan", 10);   //CRIANDO UM NOVO PROJETO
+        Projetos p2 = new Projetos("renan", 100);   //CRIANDO UM NOVO PROJETO
+        Projetos p3 = new Projetos("bak", 100);     //CRIANDO UM NOVO PROJETO
+        Projetos p4 = new Projetos("two", 100);     //CRIANDO UM NOVO PROJETO
 
+        fetin.addProjeto(p1);  //INSERINDO PROJETOS NO ARQUIVO
+        fetin.addProjeto(p2);  //INSERINDO PROJETOS NO ARQUIVO
+        fetin.addProjeto(p3);  //INSERINDO PROJETOS NO ARQUIVO
+        fetin.addProjeto(p4);  //INSERINDO PROJETOS NO ARQUIVO
+        fetin.AvaliarProjetos();  //PERCORRENDO O ARQUIVO E LENDO O HASHMAP
 
     }
 }
