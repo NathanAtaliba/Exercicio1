@@ -18,11 +18,16 @@ public class Conta {
             }
         }
 public void sacar(int valor){
+        try{
         if(saldo>=valor) {
             saldo = saldo - valor;
         }else{
             throw new SaldoInsuficienteException("Saldo Insuficiente") ;
-        }}
+
+        }}catch(SaldoInsuficienteException e){
+
+        }
+}
     public void addCliente(Cliente cliente){
         clientes.add(cliente);
     }

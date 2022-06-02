@@ -9,6 +9,6 @@ public class Main {
         conta.addCliente(cliente2);
         conta.addCliente(cliente3);
         conta.mostraInfo();
-conta.sacar(1000);
+conta.sacar(10000);
     }
 }
