@@ -4,6 +4,7 @@ import java.util.List;
 public class Main {
     public static void main(String[] args) {
     List<Classe> lista = new ArrayList<>();
+
     Classe c1 = new Classef1("H",1);
     Classe c2 = new Classef1("A",10);
     Classe c3 = new Classef1("M",6);
