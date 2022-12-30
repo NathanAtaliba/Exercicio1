@@ -19,5 +19,5 @@ public class Principal {
         System.out.println("Vai precisar de :"+ cavalos +" cavalos");
 
     }
-
 }
+

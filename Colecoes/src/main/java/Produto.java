@@ -1,3 +1,5 @@
+import static java.lang.CharSequence.compare;
+
 public class Produto implements Comparable<Produto> {
     private String nome;
 private int preco;
@@ -29,14 +31,16 @@ public Produto(String nome, int preco){
     System.out.println(preco);
 
 }
-@Override
-    public int compareTo(Produto p){
-
-        return (Integer.compare(this.preco,p.preco));
+// ORDENAR POR ORDEM ALFABETICA
+//    @Override
+//    public int compareTo(Produto p){
+//        return (compare(this.nome.toString(), p.nome.toString()));
+//    }
+//ORDERNAR POR NUMERO
+    @Override
+    public int compareTo(Produto p) {
+        return (Integer.compare(this.preco, p.preco));
+    }
 }
-//  @Override
-//   public int compareTo (Produto p){
-// return nome.compareTo(p.nome);
-// }
 
-}
+
