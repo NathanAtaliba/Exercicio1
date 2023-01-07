@@ -1,17 +1,11 @@
 COMIDA: 
 nome: Macarrao / Valor: 10.4
-nome: carne / Valor: 40.0
-nome: alface / Valor: 10.0
+nome: Macarrao / Valor: 10.4
+nome: Macarrao / Valor: 10.4
+nome: Macarrao / Valor: 10.4
 --------------------------------------------------------------------------------
 LIMPEZA: 
-nome: Desinfetante / Valor: 20.1
-nome: Rodo / Valor: 14.88
-nome: toalha / Valor: 10.0
 --------------------------------------------------------------------------------
 OUTROS: 
-nome: Teclado / Valor: 15.3
-nome: Capa / Valor: 15.0
-nome: chinelo / Valor: 14.0
-nome: caderno / Valor: 14.0
 --------------------------------------------------------------------------------
-Valor total da compra: R$163,68
+Valor total da compra: R$41,6

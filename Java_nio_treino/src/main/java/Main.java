@@ -10,10 +10,12 @@ public class Main
     public static void main(String[] args)
     {
         float valorTotal = 0;
-        int qtdProdutos;
+        int compra = 0;
         String nomeProduto;
         String descProduto;
-        float valorProduto;
+        float valorProduto = 0;
+        int quantProduto = 0;
+        int produtosTotais = 0;
         Writer writer = null;
         DecimalFormat frmt = new DecimalFormat();
         frmt.setMaximumFractionDigits(2);
@@ -21,32 +23,58 @@ public class Main
         List<Produto> produtosComida = new ArrayList<Produto>();
         List<Produto> produtosLimpeza = new ArrayList<Produto>();
         List<Produto> produtosOutros = new ArrayList<Produto>();
-        System.out.println("Entre com a quantidade de produtos: ");
-        qtdProdutos = input.nextInt();
-        for(int i= 0 ;i<qtdProdutos;i++){
-            input.nextLine();
-            System.out.print("Entre com o nome do Produto: ");
-            nomeProduto = input.nextLine();
-            System.out.print("Entre com o valor do produto: ");
-            valorProduto = input.nextFloat();
-            valorTotal = valorTotal + valorProduto;
-            do{
+        do{
+        System.out.println("Quer adicionar produtos? ");
+        System.out.println("1 - Sim");
+        System.out.println("2 - Nao");
+        System.out.print("Escolha: ");
+        compra = input.nextInt();
+        if(compra == 1) {
+            do {
+                input.nextLine();
+                System.out.print("Entre com o nome do Produto: ");
+                nomeProduto = input.next();
+                input.nextLine();
+                System.out.print("Entre com o valor do produto: ");
+                valorProduto = input.nextFloat();
                 System.out.print("Entre com a descricao do produto: ");
                 descProduto = input.next();
-                if(descProduto.equals("comida")){
-                    Produto produto = new Produto(nomeProduto,descProduto,valorProduto);
-                    produtosComida.add(produto);
-                }else if(descProduto.equals("limpeza")){
-                    Produto produto = new Produto(nomeProduto,descProduto,valorProduto);
-                    produtosLimpeza.add(produto);
-                }else if(descProduto.equals("outros")){
-                    Produto produto = new Produto(nomeProduto,descProduto,valorProduto);
-                    produtosOutros.add(produto);
-                }else{
+                if (descProduto.equals("comida")) {
+                    System.out.print("Entre com a quantidade desse produto: ");
+                    quantProduto = input.nextInt();
+                    produtosTotais = produtosTotais + quantProduto;
+                    for (int z = 0; z < quantProduto; z++) {
+                        Produto produto = new Produto(nomeProduto, descProduto, valorProduto, quantProduto);
+                        valorTotal = valorTotal + valorProduto;
+                        produtosComida.add(produto);
+                    }
+                } else if (descProduto.equals("limpeza")) {
+                    System.out.print("Entre com a quantidade desse produto: ");
+                    quantProduto = input.nextInt();
+                    produtosTotais = produtosTotais + quantProduto;
+                    for (int z = 0; z < quantProduto; z++) {
+                        Produto produto = new Produto(nomeProduto, descProduto, valorProduto, quantProduto);
+                        valorTotal = valorTotal + valorProduto;
+                        produtosLimpeza.add(produto);
+                    }
+                } else if (descProduto.equals("outros")) {
+                    System.out.print("Entre com a quantidade desse produto: ");
+                    quantProduto = input.nextInt();
+                    produtosTotais = produtosTotais + quantProduto;
+                    for (int z = 0; z < quantProduto; z++) {
+                        Produto produto = new Produto(nomeProduto, descProduto, valorProduto, quantProduto);
+                        valorTotal = valorTotal + valorProduto;
+                        produtosOutros.add(produto);
+                    }
+                } else {
                     System.out.println("DESCRICÃO NÃO EXISTE!");
                 }
-            }while(!((descProduto.equals("comida")) || (descProduto.equals("limpeza")) || (descProduto.equals("outros"))));
+            } while (!((descProduto.equals("comida")) || (descProduto.equals("limpeza")) || (descProduto.equals("outros"))));
         }
+        else{
+            System.out.println("BOA COMPRA!");
+        }
+        }while(!(compra == 2));
         try {
             writer = new BufferedWriter(new OutputStreamWriter(new FileOutputStream("filename.txt"), "utf-8"));
             writer.write("COMIDA: "+"\n");
