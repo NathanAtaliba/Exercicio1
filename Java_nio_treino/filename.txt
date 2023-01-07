@@ -2,10 +2,24 @@ COMIDA:
 nome: Macarrao / Valor: 10.4
 nome: Macarrao / Valor: 10.4
 nome: Macarrao / Valor: 10.4
-nome: Macarrao / Valor: 10.4
 --------------------------------------------------------------------------------
 LIMPEZA: 
+nome: Rodo / Valor: 14.6
+nome: Rodo / Valor: 14.6
+nome: Rodo / Valor: 14.6
 --------------------------------------------------------------------------------
 OUTROS: 
+nome: Gillete / Valor: 15.0
+nome: Gillete / Valor: 15.0
+nome: Gillete / Valor: 15.0
+nome: Gillete / Valor: 15.0
+nome: Gillete / Valor: 15.0
+nome: Teclado / Valor: 13.3
+nome: Cadernos / Valor: 15.0
+nome: Cadernos / Valor: 15.0
+nome: Cadernos / Valor: 15.0
+nome: Cadernos / Valor: 15.0
+nome: Cadernos / Valor: 15.0
+nome: Cadernos / Valor: 15.0
 --------------------------------------------------------------------------------
-Valor total da compra: R$41,6
+Valor total da compra: R$253,3

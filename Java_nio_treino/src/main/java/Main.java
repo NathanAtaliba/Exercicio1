@@ -71,8 +71,10 @@ public class Main
                 }
             } while (!((descProduto.equals("comida")) || (descProduto.equals("limpeza")) || (descProduto.equals("outros"))));
         }
-        else{
+        else if(compra == 2){
             System.out.println("BOA COMPRA!");
+        }else{
+            System.out.println("Opcao nao existe!");
         }
         }while(!(compra == 2));
         try {
